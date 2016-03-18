@@ -34,6 +34,7 @@ get_header(); ?>
 				'orderby'			=> 'meta_value_num',
 				'order'				=> 'ASC'
 			));
+
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 				/*
 				 * Include the Post-Format-specific template for the content.
